@@ -8,28 +8,51 @@ body{
   font-weight: 800;
 }
 
+p.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+/*
+I kept all elments in their original position in the css file as I FEEL  that is a bit simpler fo my mind than chopping up an dmoving pieces. Simply applying a selector to gain a higher Specificity works here and in the other cases in this file.
+
+Here i added the selector
+p
+to 
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
+in order to gain specificity as the next style is...
+*/
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
+/*Here they are targeting the Confirm button id, but what follows overrides so simply changing from a class to an id specificity
+
+.confirm {
+    background: green;
+    color: white;
+    font-weight: bold;
+  } 
+  to
+  #confirm-button gains a higher specificity than what follows
+  */
+  
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
